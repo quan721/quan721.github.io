@@ -1,0 +1,118 @@
+h1 {font-size: 50px;}
+h2,h3,h4,h5,h6 {font-family: "Arial"}
+p {font-family: "Arial"; font-size: 19px;}
+ul {font-family: "Arial"; font-size: 18px;}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+}
+
+.navbar a {
+  color: black;
+  text-align: center;
+  padding: 13px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.form {
+  border: none;
+  padding: 20px; 
+  width: 100%;
+  overflow: auto;
+}
+
+
+.info {
+  background-color: #ffffff;
+  border-left: 6px solid #00a524;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+  background-color: orange;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: orange;
+  text-align: left;
+  font-size: 20px;
+}
+
+.submitbtn {
+  padding: 10px 15px;
+  background-color: orange;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 16px}
+}
